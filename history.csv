@@ -1,0 +1,19 @@
+timestamp,user_prompt,generated_query
+2025-05-29 23:25:57,list top 5 movies according to rating,SELECT * FROM movies ORDER BY imdb_rating DESC LIMIT 5;
+2025-05-29 23:26:35,list movies in dec order of revenue,"SELECT m.title, f.revenue FROM movies m JOIN financials f ON m.movie_id = f.movie_id ORDER BY f.revenue DESC;"
+2025-05-29 23:35:21,give actors name ,SELECT name FROM actors;
+2025-05-30 00:00:55,list all the actors along with the movies they have worked in ,"SELECT a.name, GROUP_CONCAT(m.title, ', ') AS movies FROM actors a JOIN movie_actor ma ON a.actor_id = ma.actor_id JOIN movies m ON ma.movie_id = m.movie_id GROUP BY a.actor_id;
+"
+2025-05-30 00:02:12,list all movie with their actors ,"SELECT m.title, GROUP_CONCAT(a.name, ', ') AS actors FROM movies m JOIN movie_actor ma USING (movie_id) JOIN actors a USING (actor_id) GROUP BY m.movie_id;
+"
+2025-05-30 00:05:38,list of all the actors ,SELECT * FROM actors;
+2025-05-30 00:06:07,list of all the actors with their respective actors,SELECT * FROM actors;
+2025-05-30 00:06:21,list of all the actors with their respective movies,"SELECT a.name, GROUP_CONCAT(m.title, ', ') AS movies FROM actors a JOIN movie_actor ma ON a.actor_id = ma.actor_id JOIN movies m ON ma.movie_id = m.movie_id GROUP BY a.actor_id;"
+2025-05-30 00:06:33,list of all the actors with their respective movies,"SELECT a.name, GROUP_CONCAT(m.title, ', ') AS movies FROM actors a JOIN movie_actor ma ON a.actor_id = ma.actor_id JOIN movies m ON ma.movie_id = m.movie_id GROUP BY a.actor_id;"
+2025-05-30 00:07:15,top movies with highest revenue,"SELECT m.title, f.revenue FROM movies m JOIN financials f ON m.movie_id = f.movie_id ORDER BY f.revenue DESC;"
+2025-05-30 00:15:34,list of movies accroding to their imdb rating,SELECT * FROM movies ORDER BY imdb_rating DESC;
+2025-06-10 17:06:02,list top 5 rated movies,SELECT * FROM movies ORDER BY imdb_rating DESC LIMIT 5;
+2025-06-13 14:50:37,top rated movies,SELECT * FROM movies ORDER BY imdb_rating DESC;
+2025-06-13 14:50:50,top rated hollywood movies,SELECT * FROM movies WHERE industry = 'Hollywood' ORDER BY imdb_rating DESC;
+2025-06-13 14:51:11,top rated hollywood movies,SELECT * FROM movies WHERE industry = 'Hollywood' ORDER BY imdb_rating DESC;
+2025-06-19 22:07:40,top rated movies,SELECT * FROM movies ORDER BY imdb_rating DESC;
