@@ -35,8 +35,8 @@ This is an AI-powered Streamlit web app that allows users to **upload their SQLi
 
 ## 📂 Folder Structure
 ├── app.py # Main Streamlit App
-├── moviesdb_prompt.txt # Gemini prompt template
-├── movies.db # Fallback sample DB
+├── moviesdb_prompt.txt # Gemini prompt template 
+├── movies.db # Fallback sample DB 
 ├── history.csv # Auto-logged query history
 ├── requirements.txt # All dependencies
 
