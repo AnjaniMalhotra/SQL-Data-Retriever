@@ -53,7 +53,7 @@ Use the included sample_movies.db or upload your own SQLite .db file with tables
 
 - "Top 5 movies by rating" 
 - "How many action movies were released after 2015?"
--"Which movie made the highest revenue?"
+- "Which movie made the highest revenue?"
 - "List all movies directed by Christopher Nolan"
 
 
