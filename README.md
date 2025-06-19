@@ -43,18 +43,19 @@ This is an AI-powered Streamlit web app that allows users to **upload their SQLi
 
 Use the included sample_movies.db or upload your own SQLite .db file with tables like:
 
-movies(title, genre, year, rating, revenue)
-directors(id, name)
-actors(id, name)
-movie_cast(movie_id, actor_id)
-You can adjust the prompt to fit your DB structure.
+- movies(title, genre, year, rating, revenue)
+- directors(id, name)  
+- actors(id, name)
+- movie_cast(movie_id, actor_id)
+- You can adjust the prompt to fit your DB structure.
 
 ✨ Sample Questions
 
-"Top 5 movies by rating"
-"How many action movies were released after 2015?"
-"Which movie made the highest revenue?"
-"List all movies directed by Christopher Nolan"
+- "Top 5 movies by rating" 
+- "How many action movies were released after 2015?"
+-"Which movie made the highest revenue?"
+- "List all movies directed by Christopher Nolan"
+
 
 ---
 
