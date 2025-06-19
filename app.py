@@ -43,8 +43,7 @@ def save_history(prompt, query):
 
 def load_history():
     if os.path.exists("history.csv"):
-        df = pd.read_csv("history
-        .csv")
+        df = pd.read_csv("history.csv")
         df["timestamp"] = pd.to_datetime(df["timestamp"], errors='coerce')
         return df.sort_values("timestamp", ascending=False)
     else:
