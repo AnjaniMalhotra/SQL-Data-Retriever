@@ -73,8 +73,8 @@ with st.sidebar:
             f.write(uploaded_file.getbuffer())
         st.success("✅ Custom database uploaded.")
     else:
-        db_path = "sample_movies.db"
-        st.info("Using default: `sample_movies.db` (place in repo)")
+        db_path = "movies.db"
+        st.info("Using default: `movies.db` (place in repo)")
 
 # === Tabs ===
 tabs = st.tabs(["🧠 Ask a Question", "📜 Query History", "🗂️ Executed Queries", "🕒 All-Time History"])
