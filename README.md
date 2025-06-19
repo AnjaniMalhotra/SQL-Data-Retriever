@@ -1,5 +1,7 @@
 # 🎬 Gemini-Powered SQL-Data-Retriever
 
+🌐 **Live App**: https://sql-data-retriever.streamlit.app
+
 This is an AI-powered Streamlit web app that allows users to **upload their SQLite movie databases** and ask natural language questions. The app uses **Google Gemini (via `google-generativeai`)** to convert your questions into SQL queries and display results from your database.
 
 > 🔍 Example:  
